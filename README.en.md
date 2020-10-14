@@ -3,34 +3,10 @@
 #### Description
 This project is a record of getting started with WPF.
 
-#### Software Architecture
-Software architecture description
-
-#### Installation
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### Instructions
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### Contribution
-
-1.  Fork the repository
-2.  Create Feat_xxx branch
-3.  Commit your code
-4.  Create Pull Request
-
-
-#### Gitee Feature
-
-1.  You can use Readme\_XXX.md to support different languages, such as Readme\_en.md, Readme\_zh.md
-2.  Gitee blog [blog.gitee.com](https://blog.gitee.com)
-3.  Explore open source project [https://gitee.com/explore](https://gitee.com/explore)
-4.  The most valuable open source project [GVP](https://gitee.com/gvp)
-5.  The manual of Gitee [https://gitee.com/help](https://gitee.com/help)
-6.  The most popular members  [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+#### Planning
+1. Studying Layout,style,template,binding etc by reading 《Pro WPF in C# 2012 Windows Presentation Foundation in .NET Core》.
+2. Studying MVVM by watching TimontyLiu 《深入浅出WPF》.
+3. Find some sample templates to implement,for example:http://www.cssmoban.com/cssthemes/houtaimoban/.
+4. Refurbish two old projects:UltraDAQ_Lite,UltraDAQ_Pro.
+5. Learing about some WPF UI Framework.
+6. Devlop a project in cooperation with a friend.
