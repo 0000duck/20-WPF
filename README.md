@@ -1,9 +1,9 @@
 # GettingStartedWithWPF
 
-#### 介绍
+#### Introduction
 This project is a record of getting started with WPF.
 
-#### 计划
+#### Plannings
 1. Studying Layout,style,template,binding etc by reading 《Pro WPF in C# 2012 Windows Presentation Foundation in .NET Core》.
 2. Studying MVVM by watching TimontyLiu 《深入浅出WPF》.
 3. Find some sample templates to implement,for example:http://www.cssmoban.com/cssthemes/houtaimoban/.
