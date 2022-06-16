@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace WpfPrj
+namespace AlbertWPF
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -23,6 +23,7 @@ namespace WpfPrj
         public MainWindow()
         {
             InitializeComponent();
+            this.DataContext = new MainWindowsModel();
         }
     }
 }

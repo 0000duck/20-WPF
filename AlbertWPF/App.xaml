@@ -1,7 +1,7 @@
-﻿<Application x:Class="WpfPrj.App"
+﻿<Application x:Class="AlbertWPF.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:WpfPrj"
+             xmlns:local="clr-namespace:AlbertWPF"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
          
