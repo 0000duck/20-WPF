@@ -1,0 +1,62 @@
+﻿<Window x:Class="AlbertWPF_Calculate.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AlbertWPF_Calculate"
+        mc:Ignorable="d"
+        Title="{Binding Title}" Height="638" Width="400" >
+    <Window.Resources>
+        <Style x:Key="BtnSty_Calculate" TargetType="Button">
+            <Setter Property="Width" Value="100"/>
+            <Setter Property="Height" Value="90"/>
+            <Setter Property="Background" Value="LightGray"/>
+        </Style>
+        <Style x:Key="BtnSty_Num" TargetType="Button">
+            <Setter Property="Width" Value="100"/>
+            <Setter Property="Height" Value="90"/>
+            <Setter Property="Background" Value="White"/>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.2*"></RowDefinition>
+            <RowDefinition Height="0.2*"></RowDefinition>
+            <RowDefinition Height="0.3*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Label Grid.Row="0" x:Name="Label_ShowResult" Background="LightGray" Content="{Binding Label_ShowResult.Content}"/>
+        <WrapPanel Grid.Row="1" Orientation="Horizontal">
+            <Button x:Name="Btn_Division" Style="{StaticResource BtnSty_Calculate}"></Button>
+            <Button x:Name="Btn_CE" Style="{StaticResource BtnSty_Calculate}"></Button>
+            <Button x:Name="Btn_C" Style="{StaticResource BtnSty_Calculate}"></Button>
+            <Button x:Name="Btn_Delete" Style="{StaticResource BtnSty_Calculate}"></Button>
+            <Button x:Name="Btn_Inverse" Style="{StaticResource BtnSty_Calculate}"></Button>
+            <Button x:Name="Btn_Double" Style="{StaticResource BtnSty_Calculate}"></Button>
+            <Button x:Name="Btn_Square" Style="{StaticResource BtnSty_Calculate}"></Button>
+            <Button x:Name="Btn_Round" Style="{StaticResource BtnSty_Calculate}"></Button>
+        </WrapPanel>
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.6*"></ColumnDefinition>
+                <ColumnDefinition Width="0.2*"></ColumnDefinition> 
+            </Grid.ColumnDefinitions>
+            <WrapPanel Grid.Column="0" Orientation="Horizontal" VerticalAlignment="Top">
+                <Button x:Name="Btn_1" Content="{Binding Btn_1.Content}" Style="{StaticResource BtnSty_Num}" Command="{Binding ClickShowNumModelCommand}"></Button>
+                <Button x:Name="Btn_2" Content="{Binding Btn_2.Content}" Style="{StaticResource BtnSty_Num}"></Button>
+                <Button x:Name="Btn_3" Content="{Binding Btn_3.Content}" Style="{StaticResource BtnSty_Num}"></Button>
+                <Button x:Name="Btn_4" Content="{Binding Btn_4.Content}" Style="{StaticResource BtnSty_Num}"></Button>
+                <Button x:Name="Btn_5" Content="{Binding Btn_5.Content}" Style="{StaticResource BtnSty_Num}"></Button>
+                <Button x:Name="Btn_6" Content="{Binding Btn_6.Content}" Style="{StaticResource BtnSty_Num}"></Button>
+                <Button x:Name="Btn_7" Content="{Binding Btn_7.Content}" Style="{StaticResource BtnSty_Num}"></Button>
+                <Button x:Name="Btn_8" Content="{Binding Btn_8.Content}" Style="{StaticResource BtnSty_Num}"></Button>
+                <Button x:Name="Btn_9" Content="{Binding Btn_9.Content}" Style="{StaticResource BtnSty_Num}"></Button>
+            </WrapPanel>
+            <WrapPanel Grid.Column="1" Orientation="Horizontal" VerticalAlignment="Top" HorizontalAlignment="Left">
+                <Button x:Name="Btn_Add" Style="{StaticResource BtnSty_Num}"></Button>
+                <Button x:Name="Btn_Sub" Style="{StaticResource BtnSty_Num}"></Button>
+                <Button x:Name="Btn_Equel" Style="{StaticResource BtnSty_Num}"></Button>
+            </WrapPanel>
+        </Grid>
+        
+    </Grid>
+</Window>
