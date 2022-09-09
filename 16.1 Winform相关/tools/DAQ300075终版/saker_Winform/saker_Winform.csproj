@@ -1,0 +1,535 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3399DDDE-343C-4C43-9819-1C5E2B38FB3E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>saker_Winform</RootNamespace>
+    <AssemblyName>saker_Winform</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ClassLibrary_WfmDataProcess">
+      <HintPath>..\ClassLibrary_WfmDataProcess\bin\Debug\ClassLibrary_WfmDataProcess.dll</HintPath>
+    </Reference>
+    <Reference Include="FontAwesome.Sharp">
+      <HintPath>C:\Users\sn02736\AppData\Local\Microsoft\VisualStudio\10.0\ProjectAssemblies\bxy04wu_01\FontAwesome.Sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Log.Core">
+      <HintPath>Log\Log.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CommonBaseModule\CAnalysisWavedata.cs" />
+    <Compile Include="CommonBaseModule\CByteOPerate.cs" />
+    <Compile Include="CommonBaseModule\CCommomControl.cs" />
+    <Compile Include="CommonBaseModule\CControlProp.cs" />
+    <Compile Include="CommonBaseModule\CDataGridViewShow.cs" />
+    <Compile Include="CommonBaseModule\CFileOperate.cs" />
+    <Compile Include="CommonBaseModule\CFormAutoSize.cs" />
+    <Compile Include="CommonBaseModule\ChangeListFormTop.cs" />
+    <Compile Include="CommonBaseModule\CMutipleThreadSendCmd.cs" />
+    <Compile Include="CommonBaseModule\CPingIP.cs" />
+    <Compile Include="CommonBaseModule\CPortVerification.cs" />
+    <Compile Include="CommonBaseModule\CPositionCal.cs" />
+    <Compile Include="CommonBaseModule\CReceiveData.cs" />
+    <Compile Include="CommonBaseModule\CReflection.cs" />
+    <Compile Include="CommonBaseModule\CRegisterHelper.cs" />
+    <Compile Include="CommonBaseModule\CString2Value.cs" />
+    <Compile Include="CommonBaseModule\CTaskScheduler.cs" />
+    <Compile Include="CommonBaseModule\CTrashCollect.cs" />
+    <Compile Include="CommonBaseModule\CUnitTransform.cs" />
+    <Compile Include="CommonBaseModule\CValue2String.cs" />
+    <Compile Include="CommonBaseModule\CXmlHelper.cs" />
+    <Compile Include="DataBase\CSqlServer.cs" />
+    <Compile Include="DataBase\DbHelper.cs" />
+    <Compile Include="DataBase\DbHelperSql.cs" />
+    <Compile Include="Form_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Main.Designer.cs">
+      <DependentUpon>Form_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Global\CGlobalCmd.cs" />
+    <Compile Include="Global\CGlobalColor.cs" />
+    <Compile Include="Global\CGlobalString.cs" />
+    <Compile Include="Global\CGlobalValue.cs" />
+    <Compile Include="Log\CLogFile.cs" />
+    <Compile Include="Module\Module_Channel.cs" />
+    <Compile Include="Module\Module_DataBase.cs" />
+    <Compile Include="Module\Module_Device.cs" />
+    <Compile Include="Module\Module_DeviceManage.cs" />
+    <Compile Include="Module\Module_HistoryComp.cs" />
+    <Compile Include="Module\Module_Parameter.cs" />
+    <Compile Include="Module\Module_StateMonitor.cs" />
+    <Compile Include="Module\Module_ViewConfig.cs" />
+    <Compile Include="Module\Module_WaveInfo.cs" />
+    <Compile Include="Module\Module_WaveMonitor.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SubForm\Form_AddUserInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubForm\Form_AddUserInfo.Designer.cs">
+      <DependentUpon>Form_AddUserInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubForm\Form_AppInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubForm\Form_AppInfo.Designer.cs">
+      <DependentUpon>Form_AppInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubForm\Form_CalibrationInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubForm\Form_CalibrationInfo.Designer.cs">
+      <DependentUpon>Form_CalibrationInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubForm\Form_ChanConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubForm\Form_ChanConfig.Designer.cs">
+      <DependentUpon>Form_ChanConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubForm\Form_ChanScaleSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubForm\Form_ChanScaleSet.Designer.cs">
+      <DependentUpon>Form_ChanScaleSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubForm\Form_ChooseProject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubForm\Form_ChooseProject.Designer.cs">
+      <DependentUpon>Form_ChooseProject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubForm\Form_ChooseWaveData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubForm\Form_ChooseWaveData.Designer.cs">
+      <DependentUpon>Form_ChooseWaveData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubForm\Form_CreateProject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubForm\Form_CreateProject.Designer.cs">
+      <DependentUpon>Form_CreateProject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubForm\Form_DataBaseSource.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubForm\Form_DataBaseSource.Designer.cs">
+      <DependentUpon>Form_DataBaseSource.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubForm\Form_DeviceConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubForm\Form_DeviceConfig.Designer.cs">
+      <DependentUpon>Form_DeviceConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubForm\Form_HistoryComp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubForm\Form_HistoryComp.Designer.cs">
+      <DependentUpon>Form_HistoryComp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubForm\Form_LogIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubForm\Form_LogIn.Designer.cs">
+      <DependentUpon>Form_LogIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubForm\Form_ModifDeviceConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubForm\Form_ModifDeviceConfig.Designer.cs">
+      <DependentUpon>Form_ModifDeviceConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubForm\Form_ProgressBar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubForm\Form_ProgressBar.Designer.cs">
+      <DependentUpon>Form_ProgressBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubForm\Form_ProjectInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubForm\Form_ProjectInfo.Designer.cs">
+      <DependentUpon>Form_ProjectInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubForm\Form_RecordConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubForm\Form_RecordConfig.Designer.cs">
+      <DependentUpon>Form_RecordConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubForm\Form_RegisterInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubForm\Form_RegisterInfo.Designer.cs">
+      <DependentUpon>Form_RegisterInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubForm\Form_SettingWaveMonitorViewScale.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubForm\Form_SettingWaveMonitorViewScale.Designer.cs">
+      <DependentUpon>Form_SettingWaveMonitorViewScale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubForm\Form_DevCal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubForm\Form_DevCal.Designer.cs">
+      <DependentUpon>Form_DevCal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubForm\Form_StateMonitor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubForm\Form_StateMonitor.Designer.cs">
+      <DependentUpon>Form_StateMonitor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubForm\Form_UserManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubForm\Form_UserManager.Designer.cs">
+      <DependentUpon>Form_UserManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubForm\Form_ViewConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubForm\Form_ViewConfig.Designer.cs">
+      <DependentUpon>Form_ViewConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubForm\Form_WaveMonitor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubForm\Form_WaveMonitor.Designer.cs">
+      <DependentUpon>Form_WaveMonitor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubForm\Form_DeletDeviceConfigInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubForm\Form_DeletDeviceConfigInfo.Designer.cs">
+      <DependentUpon>Form_DeletDeviceConfigInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UCBaseFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserControls\UCChanInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UCChanInfo.Designer.cs">
+      <DependentUpon>UCChanInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UCChanLabel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UCChanLabel.Designer.cs">
+      <DependentUpon>UCChanLabel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UCChanWaveView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UCChanWaveView.Designer.cs">
+      <DependentUpon>UCChanWaveView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UCDevStates.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UCDevStates.Designer.cs">
+      <DependentUpon>UCDevStates.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UCDevStatesSquare.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UCDevStatesSquare.Designer.cs">
+      <DependentUpon>UCDevStatesSquare.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UCHistoryComp.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UCHistoryComp.Designer.cs">
+      <DependentUpon>UCHistoryComp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UCLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UserControls\UCLabel.Designer.cs">
+      <DependentUpon>UCLabel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UCProgressbar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UserControls\UCSmallDev.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UCSmallDev.Designer.cs">
+      <DependentUpon>UCSmallDev.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UCUserBaseDeviceInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UCUserBaseDeviceInfo.Designer.cs">
+      <DependentUpon>UCUserBaseDeviceInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UCUserBaseNullDeviceInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UCUserBaseNullDeviceInfo.Designer.cs">
+      <DependentUpon>UCUserBaseNullDeviceInfo.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form_Main.resx">
+      <DependentUpon>Form_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="SubForm\Form_AddUserInfo.resx">
+      <DependentUpon>Form_AddUserInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubForm\Form_AppInfo.resx">
+      <DependentUpon>Form_AppInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubForm\Form_CalibrationInfo.resx">
+      <DependentUpon>Form_CalibrationInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubForm\Form_ChanConfig.resx">
+      <DependentUpon>Form_ChanConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubForm\Form_ChanScaleSet.resx">
+      <DependentUpon>Form_ChanScaleSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubForm\Form_ChooseProject.resx">
+      <DependentUpon>Form_ChooseProject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubForm\Form_ChooseWaveData.resx">
+      <DependentUpon>Form_ChooseWaveData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubForm\Form_CreateProject.resx">
+      <DependentUpon>Form_CreateProject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubForm\Form_DataBaseSource.resx">
+      <DependentUpon>Form_DataBaseSource.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubForm\Form_DeviceConfig.resx">
+      <DependentUpon>Form_DeviceConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubForm\Form_HistoryComp.resx">
+      <DependentUpon>Form_HistoryComp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubForm\Form_LogIn.resx">
+      <DependentUpon>Form_LogIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubForm\Form_ModifDeviceConfig.resx">
+      <DependentUpon>Form_ModifDeviceConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubForm\Form_ProgressBar.resx">
+      <DependentUpon>Form_ProgressBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubForm\Form_ProjectInfo.resx">
+      <DependentUpon>Form_ProjectInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubForm\Form_RecordConfig.resx">
+      <DependentUpon>Form_RecordConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubForm\Form_RegisterInfo.resx">
+      <DependentUpon>Form_RegisterInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubForm\Form_SettingWaveMonitorViewScale.resx">
+      <DependentUpon>Form_SettingWaveMonitorViewScale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubForm\Form_DevCal.resx">
+      <DependentUpon>Form_DevCal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubForm\Form_StateMonitor.resx">
+      <DependentUpon>Form_StateMonitor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubForm\Form_UserManager.resx">
+      <DependentUpon>Form_UserManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubForm\Form_ViewConfig.resx">
+      <DependentUpon>Form_ViewConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubForm\Form_WaveMonitor.resx">
+      <DependentUpon>Form_WaveMonitor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubForm\Form_DeletDeviceConfigInfo.resx">
+      <DependentUpon>Form_DeletDeviceConfigInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UCBaseFrm.resx">
+      <DependentUpon>UCBaseFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UCChanInfo.resx">
+      <DependentUpon>UCChanInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UCChanLabel.resx">
+      <DependentUpon>UCChanLabel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UCChanWaveView.resx">
+      <DependentUpon>UCChanWaveView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UCDevStates.resx">
+      <DependentUpon>UCDevStates.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UCDevStatesSquare.resx">
+      <DependentUpon>UCDevStatesSquare.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UCHistoryComp.resx">
+      <DependentUpon>UCHistoryComp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UCSmallDev.resx">
+      <DependentUpon>UCSmallDev.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UCUserBaseDeviceInfo.resx">
+      <DependentUpon>UCUserBaseDeviceInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UCUserBaseNullDeviceInfo.resx">
+      <DependentUpon>UCUserBaseNullDeviceInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="HelpDocument\DAQ30075A_HelpDocument_CN.chm">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Language\en-US.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Language\zh-CN.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Device.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ControlDevice.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Log\Log.Core.dll" />
+    <Content Include="Log\log.txt" />
+    <Content Include="Resources\AllChoose.png" />
+    <Content Include="Resources\AutoZone.png" />
+    <Content Include="Resources\CancelAll.png" />
+    <Content Include="Resources\EditZone.png" />
+    <Content Include="Resources\FullZone.png" />
+    <Content Include="Resources\Measure.png" />
+    <Content Include="Resources\MianIcon.ico" />
+    <Content Include="Resources\MianIcon.png" />
+    <Content Include="Resources\Popup.png" />
+    <None Include="Resources\R32_32.png" />
+    <None Include="Resources\R.png" />
+    <Content Include="Resources\Saker.ico" />
+    <Content Include="Resources\Saker.png" />
+    <Content Include="Resources\trigState_big.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ClassLibrary_MultiLanguage\ClassLibrary_MultiLanguage.csproj">
+      <Project>{9d98428c-3189-4328-b422-00bd3edd38b5}</Project>
+      <Name>ClassLibrary_MultiLanguage</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ClassLibrary_SocketClient\ClassLibrary_SocketClient.csproj">
+      <Project>{515ae15f-84b8-4191-940c-a3af670f73f9}</Project>
+      <Name>ClassLibrary_SocketClient</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ClassLibrary_SocketServer\ClassLibrary_SocketServer.csproj">
+      <Project>{eb622bcc-2648-4d96-a170-5cb6733c1b56}</Project>
+      <Name>ClassLibrary_SocketServer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ClassLibrary_ThreadManage\ClassLibrary_ThreadManage.csproj">
+      <Project>{59c8bd7f-4183-403c-83dd-0fd362008904}</Project>
+      <Name>ClassLibrary_ThreadManage</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <ProjectExtensions />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

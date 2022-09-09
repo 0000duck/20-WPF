@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Project ProjectName=""  Note="">
+	<DeviceConfig>
+		<DeviceNum DeviceIP="" DeviceStatus="" DeviceRack="" DeviceFirmNum="" DeviceModel="" DeviceSN="" DeviceSubName=""/>		
+	</DeviceConfig>
+	<ChanConfig>
+		<CommanConfigInfo TrigSource="" TrigMode="" TrigLevel="" HorTime="" HorOffset="" StorageDepth="" TrigHold=""/>
+		<ValidDevice>
+			<Channel1 Collect="" Record="" Tag="" TagNote="" MeasureType="" Scale="" Offset="" Impedance="" Coupling="" Ratio=""/>
+			<Channel2 Collect="" Record="" Tag="" TagNote="" MeasureType="" Scale="" Offset="" Impedance="" Coupling="" Ratio=""/>
+			<Channel3 Collect="" Record="" Tag="" TagNote="" MeasureType="" Scale="" Offset="" Impedance="" Coupling="" Ratio=""/>
+			<Channel4 Collect="" Record="" Tag="" TagNote="" MeasureType="" Scale="" Offset="" Impedance="" Coupling="" Ratio=""/>
+		</ValidDevice>		
+	</ChanConfig>
+	<ViewConfig>
+		<GroupInfo GroupName="" GroupIndex=""/>
+		<ValidTag TagName="" YNumber="" Min="" Max="" Color="" WaveType=""/>
+	</ViewConfig>
+	<RecordConfig>
+		<CollectCondition CollectCondition="" CollectTime="" RecordLoaction="" FileLocation="" FileName="" AddTime=""/>
+	</RecordConfig>
+</Project>
