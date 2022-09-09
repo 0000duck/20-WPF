@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32825.248
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{93994F30-F4AE-4697-9876-FEF792785B73}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{A162AAA9-D27B-4382-A9D9-C8980CA828C6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tools", "tools", "{773E8FFE-362B-4891-AD37-ECFB0FC11245}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "scripts", "scripts", "{1AD1B7F0-8FB2-4F44-A39B-52B15E554D41}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "16.2 桌面应用开发思维转变", "src\MainPrj\16.2 桌面应用开发思维转变.csproj", "{5BC49D1D-B1CA-4051-87B3-08DF300B5161}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demo1_Calculate", "src\Demo1_Calculate\Demo1_Calculate.csproj", "{7A80CBDE-DC4A-45DB-9489-3E6CDAAA9BEB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demo2_Start", "src\Demo2_AlbertWPF\Demo2_Start.csproj", "{7AC97FDB-2666-4602-87D4-265218778D80}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5BC49D1D-B1CA-4051-87B3-08DF300B5161}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BC49D1D-B1CA-4051-87B3-08DF300B5161}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BC49D1D-B1CA-4051-87B3-08DF300B5161}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BC49D1D-B1CA-4051-87B3-08DF300B5161}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A80CBDE-DC4A-45DB-9489-3E6CDAAA9BEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A80CBDE-DC4A-45DB-9489-3E6CDAAA9BEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A80CBDE-DC4A-45DB-9489-3E6CDAAA9BEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A80CBDE-DC4A-45DB-9489-3E6CDAAA9BEB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7AC97FDB-2666-4602-87D4-265218778D80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7AC97FDB-2666-4602-87D4-265218778D80}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7AC97FDB-2666-4602-87D4-265218778D80}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7AC97FDB-2666-4602-87D4-265218778D80}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5BC49D1D-B1CA-4051-87B3-08DF300B5161} = {93994F30-F4AE-4697-9876-FEF792785B73}
+		{7A80CBDE-DC4A-45DB-9489-3E6CDAAA9BEB} = {93994F30-F4AE-4697-9876-FEF792785B73}
+		{7AC97FDB-2666-4602-87D4-265218778D80} = {93994F30-F4AE-4697-9876-FEF792785B73}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C27BF14D-E22A-4402-8D71-5E283FBB987C}
+	EndGlobalSection
+EndGlobal
